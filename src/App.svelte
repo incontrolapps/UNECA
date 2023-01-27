@@ -12,6 +12,26 @@
   import Editor from './Editor.svelte'
   const route = document.URL//"https://fa1rvwwsxx343.ons.statistics.gov.uk/TimK/UNECA/"
 
+  let cleanSheet={
+    "title": "Title*",
+    "name": "Author",
+    "email": "",
+    "date": "TBC",
+    "next": "TBC",
+    "summary": "Brief summary here",
+    "sections": [
+        {
+            "subtitle": "First section",
+            "graphic": "",
+            "text": "Text content",
+            "embed": "",
+            "download": ""
+        }
+    ],
+    "links": [],
+    "downloads": []
+}
+
   function download(filename, text) {
   var element = document.createElement('a');
   element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -184,6 +204,11 @@ let demo = true
 <h1 style:float="left" style:max-width=100%>
   {@html lab[lang][11]}
 </h1> 
+
+<button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px" on:click={()=>{localStorage.content=JSON.stringify(cleanSheet); location.reload(); } }>
+  Clear all content
+  </button>
+
 <label class="custom-file-upload">
 <input type="file" bind:files on:change={previewFile} accept=".uneca" style="height: fit-content;padding: 6px; margin-top: 20px;" placeholder="upload previous work"/>
 upload previous work
