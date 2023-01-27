@@ -118,25 +118,7 @@ let demo = true
     content.set(JSON.parse(localStorage.getItem('content')))
   else {
     content.set({
-      title: lab[lang][0] + '*',
-      name: 'name',
-      email: 'email',
-      date: new Date().toISOString().split('T')[0],
-      next: 'to be announced',
-      summary: lab[lang][5] + '*',
-      sections: [
-        {
-          subtitle: 'Mystery',
-
-          graphic:
-            'https://upload.wikimedia.org/wikipedia/commons/5/54/Classic_baby_shoes.jpg',
-          text: 'For sale: baby shoes. Never worn.',
-          embed: '',
-          download: ''
-        },
-      ],
-      links: [],
-      downloads: [],
+      "title":"A first attempt at sharing a useful app","name":"Tim Kershaw","email":"tim.kershaw@ons.gov.uk","date":"2023-01-27","next":"to be announced","summary":"Following a meeting on 26/01/2023 with Garnet, Mola, Nahom, Yaned, Samson and Thomas where a potential product was demoed, what you see on the screen in front of you is a version that might work well enough to get started. It's still buggy and requires a lot of fine tuning and additional features, however those features would be better if proposed by trial users like yourselves.","sections":[{"subtitle":"The seed of an idea","graphic":"https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2022/12/Full-room-view-of-workshop-being-delivered--e1671027272478.jpg","text":"Prior to the Côte d'Ivoire meeting in November '22 an objective was set for the \\"making Digital Products\\" workshop of facilitating participants to produce some digital content they could take home. This would be a mixture of well-considered text and charts combined into an online article.\\n\\nThe creation of an online article is a challenge for a number of reasons. Firstly, participants are familiar tools aimed at the production of paper outputs, such as Word and Excel. Secondly, their working lives are preoccupied with the quality and accuracy of outputs, so they have little time to learn about the use of technical insstruments.","embed":"","download":""}],"links":[],"downloads":[]
     });
 
 	localStorage.setItem('content', JSON.stringify($content))
@@ -158,7 +140,7 @@ let demo = true
 
 <div class=page>
   <div class="top">
-<h1 style:float="left">
+<h1 style:float="left" style:max-width=100%>
   {@html lab[lang][11]}
 </h1>
 <select
