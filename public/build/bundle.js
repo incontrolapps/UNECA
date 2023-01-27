@@ -13709,10 +13709,10 @@ var app = (function () {
     			br1 = element("br");
     			attr_dev(img, "class", "pic svelte-bu9v45");
     			if (img.src !== (img_src_value = /*content*/ ctx[0].sections[/*index*/ ctx[1]].graphic)) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "classic baby shoes");
-    			add_location(img, file$1, 8, 4, 197);
-    			add_location(br0, file$1, 8, 87, 280);
-    			add_location(br1, file$1, 8, 91, 284);
+    			attr_dev(img, "alt", "");
+    			add_location(img, file$1, 8, 4, 208);
+    			add_location(br0, file$1, 8, 69, 273);
+    			add_location(br1, file$1, 8, 73, 277);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -13745,14 +13745,17 @@ var app = (function () {
     function create_fragment$1(ctx) {
     	let div1;
     	let h2;
-    	let t0_value = /*content*/ ctx[0].sections[/*index*/ ctx[1]].subtitle + "";
+    	let t0_value = /*index*/ ctx[1] + 1 + "";
     	let t0;
     	let t1;
-    	let div0;
+    	let t2_value = /*content*/ ctx[0].sections[/*index*/ ctx[1]].subtitle + "";
     	let t2;
+    	let t3;
+    	let div0;
+    	let t4;
     	let html_tag;
     	let raw0_value = /*content*/ ctx[0].sections[/*index*/ ctx[1]].text + "";
-    	let t3;
+    	let t5;
     	let html_tag_1;
     	let raw1_value = /*content*/ ctx[0].sections[/*index*/ ctx[1]].embed + "";
     	let div1_id_value;
@@ -13763,14 +13766,16 @@ var app = (function () {
     			div1 = element("div");
     			h2 = element("h2");
     			t0 = text(t0_value);
-    			t1 = space();
+    			t1 = text(". ");
+    			t2 = text(t2_value);
+    			t3 = space();
     			div0 = element("div");
     			if (if_block) if_block.c();
-    			t2 = space();
-    			t3 = space();
+    			t4 = space();
+    			t5 = space();
     			add_location(h2, file$1, 4, 0, 96);
     			html_tag = new HtmlTag(null);
-    			add_location(div0, file$1, 6, 0, 143);
+    			add_location(div0, file$1, 6, 0, 154);
     			html_tag_1 = new HtmlTag(null);
     			attr_dev(div1, "id", div1_id_value = "section" + /*index*/ ctx[1]);
     			attr_dev(div1, "class", "section svelte-bu9v45");
@@ -13783,16 +13788,19 @@ var app = (function () {
     			insert_dev(target, div1, anchor);
     			append_dev(div1, h2);
     			append_dev(h2, t0);
-    			append_dev(div1, t1);
+    			append_dev(h2, t1);
+    			append_dev(h2, t2);
+    			append_dev(div1, t3);
     			append_dev(div1, div0);
     			if (if_block) if_block.m(div0, null);
-    			append_dev(div0, t2);
+    			append_dev(div0, t4);
     			html_tag.m(raw0_value, div0);
-    			append_dev(div1, t3);
+    			append_dev(div1, t5);
     			html_tag_1.m(raw1_value, div1);
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*content, index*/ 3 && t0_value !== (t0_value = /*content*/ ctx[0].sections[/*index*/ ctx[1]].subtitle + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*index*/ 2 && t0_value !== (t0_value = /*index*/ ctx[1] + 1 + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*content, index*/ 3 && t2_value !== (t2_value = /*content*/ ctx[0].sections[/*index*/ ctx[1]].subtitle + "")) set_data_dev(t2, t2_value);
 
     			if (/*content*/ ctx[0].sections[/*index*/ ctx[1]].graphic) {
     				if (if_block) {
@@ -13800,7 +13808,7 @@ var app = (function () {
     				} else {
     					if_block = create_if_block$1(ctx);
     					if_block.c();
-    					if_block.m(div0, t2);
+    					if_block.m(div0, t4);
     				}
     			} else if (if_block) {
     				if_block.d(1);

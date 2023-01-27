@@ -2,11 +2,11 @@
     export let content, index
 </script>
 <div id="section{index}" class="section" >
-<h2>{content.sections[index].subtitle}</h2>
+<h2>{index+1}. {content.sections[index].subtitle}</h2>
 
 <div>
     {#if content.sections[index].graphic}
-    <img class="pic" src="{content.sections[index].graphic}" alt="classic baby shoes"/><br><br>
+    <img class="pic" src="{content.sections[index].graphic}" alt=""/><br><br>
     {/if}
     {@html content.sections[index].text}</div>
     {@html content.sections[index].embed}
