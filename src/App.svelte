@@ -159,17 +159,42 @@ let demo = true
   let shiftUp = (ind) => {let current = JSON.stringify($content.sections[ind]); $content.sections.splice(ind,1); $content.sections.splice(ind + 1,0, JSON.parse(current))}
   let shiftDown = (s) => s
   let deleteS = (s) => s
-</script>
 
+  let files;
+
+
+  function previewFile() {
+  let file = document.querySelector('input[type=file]').files[0];
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    // this will then display a text file
+    localStorage.content=reader.result
+    location.reload();
+  }, false);
+
+  if (file) {
+    reader.readAsText(file);
+  }
+}
+
+</script>
 
 <div class=page>
   <div class="top">
 <h1 style:float="left" style:max-width=100%>
   {@html lab[lang][11]}
-</h1>
-<button  style="height: fit-content;padding: 6px; margin-top: 20px;" on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("index.html", text) } }>
-  Download your web page
+</h1> 
+<label class="custom-file-upload">
+<input type="file" bind:files on:change={previewFile} accept=".uneca" style="height: fit-content;padding: 6px; margin-top: 20px;" placeholder="upload previous work"/>
+upload previous work
+</label>
+<button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px" on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("latest.uneca", localStorage.content) } }>
+  Save work for later
   </button>
+  <button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px" on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("index.html", text) } }>
+    Download your web page
+    </button>
+   
 <select
   style="height:fit-content;margin-top:25px"
   name="lang"
@@ -295,6 +320,20 @@ let demo = true
 </div>
 </div>
 <style>
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    cursor: pointer;
+    height: fit-content;
+    padding: 6px;
+    margin-top: 20px;
+    border: 5px solid gold;
+    margin-right:5px
+}
+
   .top{
     display: flex;
     justify-content: space-between;
@@ -314,13 +353,13 @@ flex-direction: column;}
 
 	}
   
-	.half_content {
+.half_content {
 	  width: calc(50% );
 	  height: 100%;
 	  overflow: scroll;
 	  float: left;
-	  overflow-x: hidden
 	}
+
 	.right {
 	  display: flex;
 	  flex-direction: column;

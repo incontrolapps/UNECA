@@ -13925,26 +13925,26 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[22] = list[i];
-    	child_ctx[24] = i;
+    	child_ctx[25] = list[i];
+    	child_ctx[27] = i;
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[22] = list[i];
-    	child_ctx[26] = i;
+    	child_ctx[25] = list[i];
+    	child_ctx[29] = i;
     	return child_ctx;
     }
 
     function get_each_context_2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[27] = list[i];
-    	child_ctx[26] = i;
+    	child_ctx[30] = list[i];
+    	child_ctx[29] = i;
     	return child_ctx;
     }
 
-    // (194:4) {#if $sections && $content.title}
+    // (219:4) {#if $sections && $content.title}
     function create_if_block(ctx) {
     	let box0;
     	let t0;
@@ -13952,7 +13952,7 @@ var app = (function () {
     	let t1;
     	let i;
     	let t2;
-    	let t3_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][6] + "";
+    	let t3_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][6] + "";
     	let t3;
     	let t4;
     	let t5;
@@ -13973,7 +13973,7 @@ var app = (function () {
 
     	box1 = new Box({
     			props: {
-    				content: /*content*/ ctx[9],
+    				content: /*content*/ ctx[10],
     				$$slots: { default: [create_default_slot_2] },
     				$$scope: { ctx }
     			},
@@ -14014,9 +14014,9 @@ var app = (function () {
 
     			each_1_anchor = empty();
     			attr_dev(i, "style:color", "#999");
-    			add_location(i, file, 258, 6, 226398);
-    			add_location(br0, file, 259, 6, 226452);
-    			add_location(br1, file, 260, 6, 226466);
+    			add_location(i, file, 283, 6, 227399);
+    			add_location(br0, file, 284, 6, 227453);
+    			add_location(br1, file, 285, 6, 227467);
     		},
     		m: function mount(target, anchor) {
     			mount_component(box0, target, anchor);
@@ -14043,21 +14043,21 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const box0_changes = {};
 
-    			if (dirty & /*$$scope, $content, lang*/ 536870921) {
+    			if (dirty[0] & /*$content, lang*/ 9 | dirty[1] & /*$$scope*/ 2) {
     				box0_changes.$$scope = { dirty, ctx };
     			}
 
     			box0.$set(box0_changes);
     			const box1_changes = {};
 
-    			if (dirty & /*$$scope, lang*/ 536870920) {
+    			if (dirty[0] & /*lang*/ 8 | dirty[1] & /*$$scope*/ 2) {
     				box1_changes.$$scope = { dirty, ctx };
     			}
 
     			box1.$set(box1_changes);
-    			if ((!current || dirty & /*lang*/ 8) && t3_value !== (t3_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][6] + "")) set_data_dev(t3, t3_value);
+    			if ((!current || dirty[0] & /*lang*/ 8) && t3_value !== (t3_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][6] + "")) set_data_dev(t3, t3_value);
 
-    			if (dirty & /*lang, Array, $sections, content, placeholders, demo, lab*/ 618) {
+    			if (dirty[0] & /*lang, $sections, content, demo, lab*/ 1226) {
     				each_value_2 = Array(/*$sections*/ ctx[1]);
     				validate_each_argument(each_value_2);
     				let i;
@@ -14127,14 +14127,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(194:4) {#if $sections && $content.title}",
+    		source: "(219:4) {#if $sections && $content.title}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (195:6) <Box>
+    // (220:6) <Box>
     function create_default_slot_4(ctx) {
     	let editor;
     	let t0;
@@ -14161,7 +14161,7 @@ var app = (function () {
     	let br2;
     	let t9;
     	let label2;
-    	let t10_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][3] + "";
+    	let t10_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][3] + "";
     	let t10;
     	let t11;
     	let t12;
@@ -14175,7 +14175,7 @@ var app = (function () {
     	let br3;
     	let t16;
     	let label4;
-    	let t17_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][4] + "";
+    	let t17_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][4] + "";
     	let t17;
     	let t18;
     	let input6;
@@ -14190,8 +14190,8 @@ var app = (function () {
 
     	editor = new Editor({
     			props: {
-    				content: /*content*/ ctx[9],
-    				placeholder: /*lab*/ ctx[6][/*lang*/ ctx[3]][0],
+    				content: /*content*/ ctx[10],
+    				placeholder: /*lab*/ ctx[7][/*lang*/ ctx[3]][0],
     				part: "title"
     			},
     			$$inline: true
@@ -14243,66 +14243,66 @@ var app = (function () {
     			input7 = element("input");
     			t20 = space();
     			span3 = element("span");
-    			add_location(br0, file, 201, 8, 224739);
+    			add_location(br0, file, 226, 8, 225740);
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "class", "half");
-    			attr_dev(input0, "placeholder", input0_placeholder_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][1]);
-    			add_location(input0, file, 202, 8, 224755);
+    			attr_dev(input0, "placeholder", input0_placeholder_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][1]);
+    			add_location(input0, file, 227, 8, 225756);
     			attr_dev(input1, "type", "checkbox");
     			input1.checked = true;
-    			attr_dev(input1, "class", "svelte-i80pqg");
-    			add_location(input1, file, 208, 10, 224931);
-    			attr_dev(span0, "class", "slider round svelte-i80pqg");
-    			add_location(span0, file, 209, 10, 224976);
-    			attr_dev(label0, "class", "switch svelte-i80pqg");
-    			add_location(label0, file, 207, 8, 224897);
-    			add_location(br1, file, 211, 8, 225033);
+    			attr_dev(input1, "class", "svelte-1wr8ss4");
+    			add_location(input1, file, 233, 10, 225932);
+    			attr_dev(span0, "class", "slider round svelte-1wr8ss4");
+    			add_location(span0, file, 234, 10, 225977);
+    			attr_dev(label0, "class", "switch svelte-1wr8ss4");
+    			add_location(label0, file, 232, 8, 225898);
+    			add_location(br1, file, 236, 8, 226034);
     			attr_dev(input2, "type", "text");
     			attr_dev(input2, "class", "half");
-    			attr_dev(input2, "placeholder", input2_placeholder_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][2]);
-    			add_location(input2, file, 213, 8, 225051);
+    			attr_dev(input2, "placeholder", input2_placeholder_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][2]);
+    			add_location(input2, file, 238, 8, 226052);
     			attr_dev(input3, "type", "checkbox");
     			input3.checked = true;
-    			attr_dev(input3, "class", "svelte-i80pqg");
-    			add_location(input3, file, 219, 10, 225228);
-    			attr_dev(span1, "class", "slider round svelte-i80pqg");
-    			add_location(span1, file, 220, 10, 225273);
-    			attr_dev(label1, "class", "switch svelte-i80pqg");
-    			add_location(label1, file, 218, 8, 225194);
-    			add_location(br2, file, 222, 8, 225330);
+    			attr_dev(input3, "class", "svelte-1wr8ss4");
+    			add_location(input3, file, 244, 10, 226229);
+    			attr_dev(span1, "class", "slider round svelte-1wr8ss4");
+    			add_location(span1, file, 245, 10, 226274);
+    			attr_dev(label1, "class", "switch svelte-1wr8ss4");
+    			add_location(label1, file, 243, 8, 226195);
+    			add_location(br2, file, 247, 8, 226331);
     			attr_dev(label2, "for", "date");
-    			attr_dev(label2, "class", "svelte-i80pqg");
-    			add_location(label2, file, 223, 8, 225346);
+    			attr_dev(label2, "class", "svelte-1wr8ss4");
+    			add_location(label2, file, 248, 8, 226347);
     			attr_dev(input4, "type", "date");
     			attr_dev(input4, "id", "date");
     			attr_dev(input4, "class", "half");
     			attr_dev(input4, "placeholder", "date");
-    			add_location(input4, file, 224, 8, 225397);
+    			add_location(input4, file, 249, 8, 226398);
     			attr_dev(input5, "type", "checkbox");
     			input5.checked = true;
-    			attr_dev(input5, "class", "svelte-i80pqg");
-    			add_location(input5, file, 231, 10, 225586);
-    			attr_dev(span2, "class", "slider round svelte-i80pqg");
-    			add_location(span2, file, 232, 10, 225631);
-    			attr_dev(label3, "class", "switch svelte-i80pqg");
-    			add_location(label3, file, 230, 8, 225552);
-    			add_location(br3, file, 234, 8, 225688);
+    			attr_dev(input5, "class", "svelte-1wr8ss4");
+    			add_location(input5, file, 256, 10, 226587);
+    			attr_dev(span2, "class", "slider round svelte-1wr8ss4");
+    			add_location(span2, file, 257, 10, 226632);
+    			attr_dev(label3, "class", "switch svelte-1wr8ss4");
+    			add_location(label3, file, 255, 8, 226553);
+    			add_location(br3, file, 259, 8, 226689);
     			attr_dev(label4, "for", "next");
-    			attr_dev(label4, "class", "svelte-i80pqg");
-    			add_location(label4, file, 235, 8, 225704);
+    			attr_dev(label4, "class", "svelte-1wr8ss4");
+    			add_location(label4, file, 260, 8, 226705);
     			attr_dev(input6, "type", "date");
     			attr_dev(input6, "id", "next");
     			attr_dev(input6, "class", "half");
     			attr_dev(input6, "placeholder", "date");
-    			add_location(input6, file, 236, 8, 225754);
+    			add_location(input6, file, 261, 8, 226755);
     			attr_dev(input7, "type", "checkbox");
     			input7.checked = true;
-    			attr_dev(input7, "class", "svelte-i80pqg");
-    			add_location(input7, file, 243, 10, 225943);
-    			attr_dev(span3, "class", "slider round svelte-i80pqg");
-    			add_location(span3, file, 244, 10, 225988);
-    			attr_dev(label5, "class", "switch svelte-i80pqg");
-    			add_location(label5, file, 242, 8, 225909);
+    			attr_dev(input7, "class", "svelte-1wr8ss4");
+    			add_location(input7, file, 268, 10, 226944);
+    			attr_dev(span3, "class", "slider round svelte-1wr8ss4");
+    			add_location(span3, file, 269, 10, 226989);
+    			attr_dev(label5, "class", "switch svelte-1wr8ss4");
+    			add_location(label5, file, 267, 8, 226910);
     		},
     		m: function mount(target, anchor) {
     			mount_component(editor, target, anchor);
@@ -14357,10 +14357,10 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[12]),
-    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[13]),
-    					listen_dev(input4, "input", /*input4_input_handler*/ ctx[14]),
-    					listen_dev(input6, "input", /*input6_input_handler*/ ctx[15])
+    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[15]),
+    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[16]),
+    					listen_dev(input4, "input", /*input4_input_handler*/ ctx[17]),
+    					listen_dev(input6, "input", /*input6_input_handler*/ ctx[18])
     				];
 
     				mounted = true;
@@ -14368,34 +14368,34 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const editor_changes = {};
-    			if (dirty & /*lang*/ 8) editor_changes.placeholder = /*lab*/ ctx[6][/*lang*/ ctx[3]][0];
+    			if (dirty[0] & /*lang*/ 8) editor_changes.placeholder = /*lab*/ ctx[7][/*lang*/ ctx[3]][0];
     			editor.$set(editor_changes);
 
-    			if (!current || dirty & /*lang*/ 8 && input0_placeholder_value !== (input0_placeholder_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][1])) {
+    			if (!current || dirty[0] & /*lang*/ 8 && input0_placeholder_value !== (input0_placeholder_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][1])) {
     				attr_dev(input0, "placeholder", input0_placeholder_value);
     			}
 
-    			if (dirty & /*$content*/ 1 && input0.value !== /*$content*/ ctx[0].name) {
+    			if (dirty[0] & /*$content*/ 1 && input0.value !== /*$content*/ ctx[0].name) {
     				set_input_value(input0, /*$content*/ ctx[0].name);
     			}
 
-    			if (!current || dirty & /*lang*/ 8 && input2_placeholder_value !== (input2_placeholder_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][2])) {
+    			if (!current || dirty[0] & /*lang*/ 8 && input2_placeholder_value !== (input2_placeholder_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][2])) {
     				attr_dev(input2, "placeholder", input2_placeholder_value);
     			}
 
-    			if (dirty & /*$content*/ 1 && input2.value !== /*$content*/ ctx[0].email) {
+    			if (dirty[0] & /*$content*/ 1 && input2.value !== /*$content*/ ctx[0].email) {
     				set_input_value(input2, /*$content*/ ctx[0].email);
     			}
 
-    			if ((!current || dirty & /*lang*/ 8) && t10_value !== (t10_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][3] + "")) set_data_dev(t10, t10_value);
+    			if ((!current || dirty[0] & /*lang*/ 8) && t10_value !== (t10_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][3] + "")) set_data_dev(t10, t10_value);
 
-    			if (dirty & /*$content*/ 1) {
+    			if (dirty[0] & /*$content*/ 1) {
     				set_input_value(input4, /*$content*/ ctx[0].date);
     			}
 
-    			if ((!current || dirty & /*lang*/ 8) && t17_value !== (t17_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][4] + "")) set_data_dev(t17, t17_value);
+    			if ((!current || dirty[0] & /*lang*/ 8) && t17_value !== (t17_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][4] + "")) set_data_dev(t17, t17_value);
 
-    			if (dirty & /*$content*/ 1) {
+    			if (dirty[0] & /*$content*/ 1) {
     				set_input_value(input6, /*$content*/ ctx[0].next);
     			}
     		},
@@ -14447,16 +14447,16 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(195:6) <Box>",
+    		source: "(220:6) <Box>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (249:8) <Title>
+    // (274:8) <Title>
     function create_default_slot_3(ctx) {
-    	let t_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][5] + "";
+    	let t_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][5] + "";
     	let t;
 
     	const block = {
@@ -14467,7 +14467,7 @@ var app = (function () {
     			insert_dev(target, t, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*lang*/ 8 && t_value !== (t_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][5] + "")) set_data_dev(t, t_value);
+    			if (dirty[0] & /*lang*/ 8 && t_value !== (t_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][5] + "")) set_data_dev(t, t_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(t);
@@ -14478,14 +14478,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(249:8) <Title>",
+    		source: "(274:8) <Title>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (248:6) <Box {content}>
+    // (273:6) <Box {content}>
     function create_default_slot_2(ctx) {
     	let title;
     	let t;
@@ -14503,8 +14503,8 @@ var app = (function () {
 
     	editor = new Editor({
     			props: {
-    				content: /*content*/ ctx[9],
-    				placeholder: /*lab*/ ctx[6][/*lang*/ ctx[3]][5],
+    				content: /*content*/ ctx[10],
+    				placeholder: /*lab*/ ctx[7][/*lang*/ ctx[3]][5],
     				part: "summary"
     			},
     			$$inline: true
@@ -14517,7 +14517,7 @@ var app = (function () {
     			div = element("div");
     			create_component(editor.$$.fragment);
     			attr_dev(div, "style:display", "block");
-    			add_location(div, file, 249, 2, 226115);
+    			add_location(div, file, 274, 2, 227116);
     		},
     		m: function mount(target, anchor) {
     			mount_component(title, target, anchor);
@@ -14529,13 +14529,13 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const title_changes = {};
 
-    			if (dirty & /*$$scope, lang*/ 536870920) {
+    			if (dirty[0] & /*lang*/ 8 | dirty[1] & /*$$scope*/ 2) {
     				title_changes.$$scope = { dirty, ctx };
     			}
 
     			title.$set(title_changes);
     			const editor_changes = {};
-    			if (dirty & /*lang*/ 8) editor_changes.placeholder = /*lab*/ ctx[6][/*lang*/ ctx[3]][5];
+    			if (dirty[0] & /*lang*/ 8) editor_changes.placeholder = /*lab*/ ctx[7][/*lang*/ ctx[3]][5];
     			editor.$set(editor_changes);
     		},
     		i: function intro(local) {
@@ -14561,19 +14561,19 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(248:6) <Box {content}>",
+    		source: "(273:6) <Box {content}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (264:10) <Title {content}>
+    // (289:10) <Title {content}>
     function create_default_slot_1(ctx) {
-    	let t0_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][7] + "";
+    	let t0_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][7] + "";
     	let t0;
     	let t1;
-    	let t2_value = /*i*/ ctx[26] + 1 + "";
+    	let t2_value = /*i*/ ctx[29] + 1 + "";
     	let t2;
 
     	const block = {
@@ -14588,7 +14588,7 @@ var app = (function () {
     			insert_dev(target, t2, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*lang*/ 8 && t0_value !== (t0_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][7] + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*lang*/ 8 && t0_value !== (t0_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][7] + "")) set_data_dev(t0, t0_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(t0);
@@ -14601,14 +14601,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(264:10) <Title {content}>",
+    		source: "(289:10) <Title {content}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (263:8) <Box>
+    // (288:8) <Box>
     function create_default_slot(ctx) {
     	let title;
     	let t0;
@@ -14620,7 +14620,7 @@ var app = (function () {
 
     	title = new Title({
     			props: {
-    				content: /*content*/ ctx[9],
+    				content: /*content*/ ctx[10],
     				$$slots: { default: [create_default_slot_1] },
     				$$scope: { ctx }
     			},
@@ -14629,8 +14629,8 @@ var app = (function () {
 
     	buttonarray = new ButtonArray({
     			props: {
-    				content: /*content*/ ctx[9],
-    				ind: /*i*/ ctx[26]
+    				content: /*content*/ ctx[10],
+    				ind: /*i*/ ctx[29]
     			},
     			$$inline: true
     		});
@@ -14638,11 +14638,11 @@ var app = (function () {
     	sec = new Sec({
     			props: {
     				lang: /*lang*/ ctx[3],
-    				sec: /*sec*/ ctx[27],
-    				content: /*content*/ ctx[9],
+    				sec: /*sec*/ ctx[30],
+    				content: /*content*/ ctx[10],
     				placeholders,
-    				demo: /*demo*/ ctx[5],
-    				index: /*i*/ ctx[26]
+    				demo: /*demo*/ ctx[6],
+    				index: /*i*/ ctx[29]
     			},
     			$$inline: true
     		});
@@ -14668,14 +14668,14 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const title_changes = {};
 
-    			if (dirty & /*$$scope, lang*/ 536870920) {
+    			if (dirty[0] & /*lang*/ 8 | dirty[1] & /*$$scope*/ 2) {
     				title_changes.$$scope = { dirty, ctx };
     			}
 
     			title.$set(title_changes);
     			const sec_changes = {};
-    			if (dirty & /*lang*/ 8) sec_changes.lang = /*lang*/ ctx[3];
-    			if (dirty & /*$sections*/ 2) sec_changes.sec = /*sec*/ ctx[27];
+    			if (dirty[0] & /*lang*/ 8) sec_changes.lang = /*lang*/ ctx[3];
+    			if (dirty[0] & /*$sections*/ 2) sec_changes.sec = /*sec*/ ctx[30];
     			sec.$set(sec_changes);
     		},
     		i: function intro(local) {
@@ -14705,14 +14705,14 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(263:8) <Box>",
+    		source: "(288:8) <Box>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (262:6) {#each Array($sections) as sec, i}
+    // (287:6) {#each Array($sections) as sec, i}
     function create_each_block_2(ctx) {
     	let box;
     	let current;
@@ -14736,7 +14736,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const box_changes = {};
 
-    			if (dirty & /*$$scope, lang, $sections*/ 536870922) {
+    			if (dirty[0] & /*lang, $sections*/ 10 | dirty[1] & /*$$scope*/ 2) {
     				box_changes.$$scope = { dirty, ctx };
     			}
 
@@ -14760,18 +14760,18 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(262:6) {#each Array($sections) as sec, i}",
+    		source: "(287:6) {#each Array($sections) as sec, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (279:8) {#each Array($sections) as section, i}
+    // (304:8) {#each Array($sections) as section, i}
     function create_each_block_1(ctx) {
     	let li;
     	let a;
-    	let t0_value = /*$content*/ ctx[0].sections[/*i*/ ctx[26]].subtitle + "";
+    	let t0_value = /*$content*/ ctx[0].sections[/*i*/ ctx[29]].subtitle + "";
     	let t0;
     	let t1;
 
@@ -14781,10 +14781,10 @@ var app = (function () {
     			a = element("a");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr_dev(a, "href", "#section" + /*i*/ ctx[26]);
-    			add_location(a, file, 280, 12, 227092);
-    			attr_dev(li, "class", "bold svelte-i80pqg");
-    			add_location(li, file, 279, 10, 227061);
+    			attr_dev(a, "href", "#section" + /*i*/ ctx[29]);
+    			add_location(a, file, 305, 12, 228093);
+    			attr_dev(li, "class", "bold svelte-1wr8ss4");
+    			add_location(li, file, 304, 10, 228062);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -14793,7 +14793,7 @@ var app = (function () {
     			append_dev(li, t1);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*$content*/ 1 && t0_value !== (t0_value = /*$content*/ ctx[0].sections[/*i*/ ctx[26]].subtitle + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*$content*/ 1 && t0_value !== (t0_value = /*$content*/ ctx[0].sections[/*i*/ ctx[29]].subtitle + "")) set_data_dev(t0, t0_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(li);
@@ -14804,14 +14804,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(279:8) {#each Array($sections) as section, i}",
+    		source: "(304:8) {#each Array($sections) as section, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (286:1) {#each Array($sections) as section, index}
+    // (311:1) {#each Array($sections) as section, index}
     function create_each_block(ctx) {
     	let outputsection;
     	let t;
@@ -14820,7 +14820,7 @@ var app = (function () {
     	outputsection = new OutputSection({
     			props: {
     				content: /*$content*/ ctx[0],
-    				index: /*index*/ ctx[24]
+    				index: /*index*/ ctx[27]
     			},
     			$$inline: true
     		});
@@ -14837,7 +14837,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const outputsection_changes = {};
-    			if (dirty & /*$content*/ 1) outputsection_changes.content = /*$content*/ ctx[0];
+    			if (dirty[0] & /*$content*/ 1) outputsection_changes.content = /*$content*/ ctx[0];
     			outputsection.$set(outputsection_changes);
     		},
     		i: function intro(local) {
@@ -14859,7 +14859,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(286:1) {#each Array($sections) as section, index}",
+    		source: "(311:1) {#each Array($sections) as section, index}",
     		ctx
     	});
 
@@ -14870,56 +14870,62 @@ var app = (function () {
     	let div7;
     	let div0;
     	let h1;
-    	let raw0_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][11] + "";
+    	let raw0_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][11] + "";
     	let t0;
-    	let button0;
+    	let label;
+    	let input;
+    	let t1;
     	let t2;
+    	let button0;
+    	let t4;
+    	let button1;
+    	let t6;
     	let select;
     	let option0;
     	let option1;
     	let option2;
     	let option3;
-    	let t7;
+    	let t11;
     	let br0;
-    	let t8;
+    	let t12;
     	let div6;
     	let div2;
     	let div1;
     	let brain;
-    	let t9;
-    	let p;
-    	let raw1_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][8] + "";
-    	let t10;
-    	let br1;
-    	let t11;
-    	let t12;
-    	let button1;
-    	let t13_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][10] + "";
     	let t13;
+    	let p;
+    	let raw1_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][8] + "";
     	let t14;
-    	let div5;
-    	let outputtitle;
+    	let br1;
     	let t15;
-    	let outputsummary;
     	let t16;
-    	let div3;
-    	let h3;
-    	let t17_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][6] + "";
+    	let button2;
+    	let t17_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][10] + "";
     	let t17;
     	let t18;
-    	let ol;
+    	let div5;
+    	let outputtitle;
     	let t19;
-    	let hr;
+    	let outputsummary;
     	let t20;
+    	let div3;
+    	let h3;
+    	let t21_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][6] + "";
+    	let t21;
+    	let t22;
+    	let ol;
+    	let t23;
+    	let hr;
+    	let t24;
     	let br2;
     	let br3;
     	let br4;
     	let br5;
     	let br6;
     	let br7;
-    	let t21;
+    	let t25;
     	let textarea;
-    	let t22;
+    	let t26;
     	let div4;
     	let current;
     	let mounted;
@@ -14928,12 +14934,12 @@ var app = (function () {
     	let if_block = /*$sections*/ ctx[1] && /*$content*/ ctx[0].title && create_if_block(ctx);
 
     	outputtitle = new OutputTitle({
-    			props: { content: /*content*/ ctx[9] },
+    			props: { content: /*content*/ ctx[10] },
     			$$inline: true
     		});
 
     	outputsummary = new OutputSummary({
-    			props: { content: /*content*/ ctx[9] },
+    			props: { content: /*content*/ ctx[10] },
     			$$inline: true
     		});
 
@@ -14963,9 +14969,16 @@ var app = (function () {
     			div0 = element("div");
     			h1 = element("h1");
     			t0 = space();
-    			button0 = element("button");
-    			button0.textContent = "Download your web page";
+    			label = element("label");
+    			input = element("input");
+    			t1 = text("\r\nupload previous work");
     			t2 = space();
+    			button0 = element("button");
+    			button0.textContent = "Save work for later";
+    			t4 = space();
+    			button1 = element("button");
+    			button1.textContent = "Download your web page";
+    			t6 = space();
     			select = element("select");
     			option0 = element("option");
     			option0.textContent = "🗨 ENGLISH";
@@ -14975,117 +14988,134 @@ var app = (function () {
     			option2.textContent = "🗨 PORTUGUÊS";
     			option3 = element("option");
     			option3.textContent = "🗨 ESPAÑOL";
-    			t7 = space();
+    			t11 = space();
     			br0 = element("br");
-    			t8 = space();
+    			t12 = space();
     			div6 = element("div");
     			div2 = element("div");
     			div1 = element("div");
     			create_component(brain.$$.fragment);
-    			t9 = space();
+    			t13 = space();
     			p = element("p");
-    			t10 = space();
-    			br1 = element("br");
-    			t11 = space();
-    			if (if_block) if_block.c();
-    			t12 = space();
-    			button1 = element("button");
-    			t13 = text(t13_value);
     			t14 = space();
-    			div5 = element("div");
-    			create_component(outputtitle.$$.fragment);
+    			br1 = element("br");
     			t15 = space();
-    			create_component(outputsummary.$$.fragment);
+    			if (if_block) if_block.c();
     			t16 = space();
-    			div3 = element("div");
-    			h3 = element("h3");
+    			button2 = element("button");
     			t17 = text(t17_value);
     			t18 = space();
+    			div5 = element("div");
+    			create_component(outputtitle.$$.fragment);
+    			t19 = space();
+    			create_component(outputsummary.$$.fragment);
+    			t20 = space();
+    			div3 = element("div");
+    			h3 = element("h3");
+    			t21 = text(t21_value);
+    			t22 = space();
     			ol = element("ol");
 
     			for (let i = 0; i < each_blocks_1.length; i += 1) {
     				each_blocks_1[i].c();
     			}
 
-    			t19 = space();
+    			t23 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
     			hr = element("hr");
-    			t20 = space();
+    			t24 = space();
     			br2 = element("br");
     			br3 = element("br");
     			br4 = element("br");
     			br5 = element("br");
     			br6 = element("br");
     			br7 = element("br");
-    			t21 = space();
+    			t25 = space();
     			textarea = element("textarea");
-    			t22 = space();
+    			t26 = space();
     			div4 = element("div");
     			div4.textContent = "End";
     			attr_dev(h1, "style:float", "left");
     			attr_dev(h1, "style:max-width", "100%");
-    			add_location(h1, file, 166, 0, 223537);
+    			add_location(h1, file, 183, 0, 223907);
+    			attr_dev(input, "type", "file");
+    			attr_dev(input, "accept", ".uneca");
+    			set_style(input, "height", "fit-content");
+    			set_style(input, "padding", "6px");
+    			set_style(input, "margin-top", "20px");
+    			attr_dev(input, "placeholder", "upload previous work");
+    			attr_dev(input, "class", "svelte-1wr8ss4");
+    			add_location(input, file, 187, 0, 224022);
+    			attr_dev(label, "class", "custom-file-upload svelte-1wr8ss4");
+    			add_location(label, file, 186, 0, 223986);
     			set_style(button0, "height", "fit-content");
     			set_style(button0, "padding", "6px");
     			set_style(button0, "margin-top", "20px");
-    			attr_dev(button0, "class", "svelte-i80pqg");
-    			add_location(button0, file, 169, 0, 223615);
+    			set_style(button0, "margin-right", "5px");
+    			attr_dev(button0, "class", "svelte-1wr8ss4");
+    			add_location(button0, file, 190, 0, 224222);
+    			set_style(button1, "height", "fit-content");
+    			set_style(button1, "padding", "6px");
+    			set_style(button1, "margin-top", "20px");
+    			set_style(button1, "margin-right", "5px");
+    			attr_dev(button1, "class", "svelte-1wr8ss4");
+    			add_location(button1, file, 193, 2, 224591);
     			option0.__value = "E";
     			option0.value = option0.__value;
-    			add_location(option0, file, 177, 2, 224047);
+    			add_location(option0, file, 202, 2, 225048);
     			option1.__value = "F";
     			option1.value = option1.__value;
-    			add_location(option1, file, 178, 2, 224088);
+    			add_location(option1, file, 203, 2, 225089);
     			option2.__value = "P";
     			option2.value = option2.__value;
-    			add_location(option2, file, 179, 2, 224130);
+    			add_location(option2, file, 204, 2, 225131);
     			option3.__value = "S";
     			option3.value = option3.__value;
-    			add_location(option3, file, 180, 2, 224173);
+    			add_location(option3, file, 205, 2, 225174);
     			set_style(select, "height", "fit-content");
     			set_style(select, "margin-top", "25px");
     			attr_dev(select, "name", "lang");
-    			if (/*lang*/ ctx[3] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[11].call(select));
-    			add_location(select, file, 172, 0, 223951);
-    			attr_dev(div0, "class", "top svelte-i80pqg");
-    			add_location(div0, file, 165, 2, 223518);
+    			if (/*lang*/ ctx[3] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[14].call(select));
+    			add_location(select, file, 197, 0, 224952);
+    			attr_dev(div0, "class", "top svelte-1wr8ss4");
+    			add_location(div0, file, 182, 2, 223888);
     			set_style(br0, "clear", "both");
-    			add_location(br0, file, 182, 0, 224229);
+    			add_location(br0, file, 207, 0, 225230);
     			attr_dev(p, "style:padding-left", "10px");
-    			add_location(p, file, 187, 6, 224363);
-    			attr_dev(div1, "class", "shaded svelte-i80pqg");
-    			add_location(div1, file, 185, 4, 224318);
-    			add_location(br1, file, 191, 4, 224452);
-    			attr_dev(button1, "class", "svelte-i80pqg");
-    			add_location(button1, file, 269, 4, 226752);
-    			attr_dev(div2, "class", "half_content svelte-i80pqg");
-    			add_location(div2, file, 184, 2, 224286);
-    			add_location(h3, file, 276, 6, 226966);
-    			add_location(ol, file, 277, 6, 226997);
-    			attr_dev(div3, "class", "toc svelte-i80pqg");
-    			add_location(div3, file, 274, 4, 226939);
-    			add_location(hr, file, 287, 8, 227309);
-    			add_location(br2, file, 288, 1, 227316);
-    			add_location(br3, file, 288, 5, 227320);
-    			add_location(br4, file, 288, 9, 227324);
-    			add_location(br5, file, 288, 13, 227328);
-    			add_location(br6, file, 288, 17, 227332);
-    			add_location(br7, file, 288, 21, 227336);
+    			add_location(p, file, 212, 6, 225364);
+    			attr_dev(div1, "class", "shaded svelte-1wr8ss4");
+    			add_location(div1, file, 210, 4, 225319);
+    			add_location(br1, file, 216, 4, 225453);
+    			attr_dev(button2, "class", "svelte-1wr8ss4");
+    			add_location(button2, file, 294, 4, 227753);
+    			attr_dev(div2, "class", "half_content svelte-1wr8ss4");
+    			add_location(div2, file, 209, 2, 225287);
+    			add_location(h3, file, 301, 6, 227967);
+    			add_location(ol, file, 302, 6, 227998);
+    			attr_dev(div3, "class", "toc svelte-1wr8ss4");
+    			add_location(div3, file, 299, 4, 227940);
+    			add_location(hr, file, 312, 8, 228310);
+    			add_location(br2, file, 313, 1, 228317);
+    			add_location(br3, file, 313, 5, 228321);
+    			add_location(br4, file, 313, 9, 228325);
+    			add_location(br5, file, 313, 13, 228329);
+    			add_location(br6, file, 313, 17, 228333);
+    			add_location(br7, file, 313, 21, 228337);
     			attr_dev(textarea, "id", "download");
-    			add_location(textarea, file, 290, 4, 227349);
+    			add_location(textarea, file, 315, 4, 228350);
     			attr_dev(div4, "style:height", "300px");
-    			add_location(div4, file, 291, 2, 227389);
+    			add_location(div4, file, 316, 2, 228390);
     			attr_dev(div5, "id", "outputFrame");
-    			attr_dev(div5, "class", "half_content right svelte-i80pqg");
-    			add_location(div5, file, 271, 2, 226820);
-    			attr_dev(div6, "class", "full_content svelte-i80pqg");
-    			add_location(div6, file, 183, 0, 224256);
-    			attr_dev(div7, "class", "page svelte-i80pqg");
-    			add_location(div7, file, 164, 0, 223498);
+    			attr_dev(div5, "class", "half_content right svelte-1wr8ss4");
+    			add_location(div5, file, 296, 2, 227821);
+    			attr_dev(div6, "class", "full_content svelte-1wr8ss4");
+    			add_location(div6, file, 208, 0, 225257);
+    			attr_dev(div7, "class", "page svelte-1wr8ss4");
+    			add_location(div7, file, 181, 0, 223868);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -15096,96 +15126,105 @@ var app = (function () {
     			append_dev(div0, h1);
     			h1.innerHTML = raw0_value;
     			append_dev(div0, t0);
-    			append_dev(div0, button0);
+    			append_dev(div0, label);
+    			append_dev(label, input);
+    			append_dev(label, t1);
     			append_dev(div0, t2);
+    			append_dev(div0, button0);
+    			append_dev(div0, t4);
+    			append_dev(div0, button1);
+    			append_dev(div0, t6);
     			append_dev(div0, select);
     			append_dev(select, option0);
     			append_dev(select, option1);
     			append_dev(select, option2);
     			append_dev(select, option3);
     			select_option(select, /*lang*/ ctx[3]);
-    			append_dev(div7, t7);
+    			append_dev(div7, t11);
     			append_dev(div7, br0);
-    			append_dev(div7, t8);
+    			append_dev(div7, t12);
     			append_dev(div7, div6);
     			append_dev(div6, div2);
     			append_dev(div2, div1);
     			mount_component(brain, div1, null);
-    			append_dev(div1, t9);
+    			append_dev(div1, t13);
     			append_dev(div1, p);
     			p.innerHTML = raw1_value;
-    			append_dev(div2, t10);
+    			append_dev(div2, t14);
     			append_dev(div2, br1);
-    			append_dev(div2, t11);
+    			append_dev(div2, t15);
     			if (if_block) if_block.m(div2, null);
-    			append_dev(div2, t12);
-    			append_dev(div2, button1);
-    			append_dev(button1, t13);
-    			append_dev(div6, t14);
+    			append_dev(div2, t16);
+    			append_dev(div2, button2);
+    			append_dev(button2, t17);
+    			append_dev(div6, t18);
     			append_dev(div6, div5);
     			mount_component(outputtitle, div5, null);
-    			append_dev(div5, t15);
+    			append_dev(div5, t19);
     			mount_component(outputsummary, div5, null);
-    			append_dev(div5, t16);
+    			append_dev(div5, t20);
     			append_dev(div5, div3);
     			append_dev(div3, h3);
-    			append_dev(h3, t17);
-    			append_dev(div3, t18);
+    			append_dev(h3, t21);
+    			append_dev(div3, t22);
     			append_dev(div3, ol);
 
     			for (let i = 0; i < each_blocks_1.length; i += 1) {
     				each_blocks_1[i].m(ol, null);
     			}
 
-    			append_dev(div5, t19);
+    			append_dev(div5, t23);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(div5, null);
     			}
 
     			append_dev(div5, hr);
-    			append_dev(div5, t20);
+    			append_dev(div5, t24);
     			append_dev(div5, br2);
     			append_dev(div5, br3);
     			append_dev(div5, br4);
     			append_dev(div5, br5);
     			append_dev(div5, br6);
     			append_dev(div5, br7);
-    			append_dev(div5, t21);
+    			append_dev(div5, t25);
     			append_dev(div5, textarea);
-    			append_dev(div5, t22);
+    			append_dev(div5, t26);
     			append_dev(div5, div4);
     			current = true;
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(button0, "click", /*click_handler*/ ctx[10], false, false, false),
-    					listen_dev(select, "change", /*select_change_handler*/ ctx[11]),
-    					listen_dev(button1, "click", /*addSection*/ ctx[8], false, false, false)
+    					listen_dev(input, "change", /*input_change_handler*/ ctx[11]),
+    					listen_dev(input, "change", previewFile, false, false, false),
+    					listen_dev(button0, "click", /*click_handler*/ ctx[12], false, false, false),
+    					listen_dev(button1, "click", /*click_handler_1*/ ctx[13], false, false, false),
+    					listen_dev(select, "change", /*select_change_handler*/ ctx[14]),
+    					listen_dev(button2, "click", /*addSection*/ ctx[9], false, false, false)
     				];
 
     				mounted = true;
     			}
     		},
-    		p: function update(ctx, [dirty]) {
-    			if ((!current || dirty & /*lang*/ 8) && raw0_value !== (raw0_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][11] + "")) h1.innerHTML = raw0_value;
-    			if (dirty & /*lang*/ 8) {
+    		p: function update(ctx, dirty) {
+    			if ((!current || dirty[0] & /*lang*/ 8) && raw0_value !== (raw0_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][11] + "")) h1.innerHTML = raw0_value;
+    			if (dirty[0] & /*lang*/ 8) {
     				select_option(select, /*lang*/ ctx[3]);
     			}
 
-    			if ((!current || dirty & /*lang*/ 8) && raw1_value !== (raw1_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][8] + "")) p.innerHTML = raw1_value;
+    			if ((!current || dirty[0] & /*lang*/ 8) && raw1_value !== (raw1_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][8] + "")) p.innerHTML = raw1_value;
     			if (/*$sections*/ ctx[1] && /*$content*/ ctx[0].title) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
 
-    					if (dirty & /*$sections, $content*/ 3) {
+    					if (dirty[0] & /*$sections, $content*/ 3) {
     						transition_in(if_block, 1);
     					}
     				} else {
     					if_block = create_if_block(ctx);
     					if_block.c();
     					transition_in(if_block, 1);
-    					if_block.m(div2, t12);
+    					if_block.m(div2, t16);
     				}
     			} else if (if_block) {
     				group_outros();
@@ -15197,10 +15236,10 @@ var app = (function () {
     				check_outros();
     			}
 
-    			if ((!current || dirty & /*lang*/ 8) && t13_value !== (t13_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][10] + "")) set_data_dev(t13, t13_value);
-    			if ((!current || dirty & /*lang*/ 8) && t17_value !== (t17_value = /*lab*/ ctx[6][/*lang*/ ctx[3]][6] + "")) set_data_dev(t17, t17_value);
+    			if ((!current || dirty[0] & /*lang*/ 8) && t17_value !== (t17_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][10] + "")) set_data_dev(t17, t17_value);
+    			if ((!current || dirty[0] & /*lang*/ 8) && t21_value !== (t21_value = /*lab*/ ctx[7][/*lang*/ ctx[3]][6] + "")) set_data_dev(t21, t21_value);
 
-    			if (dirty & /*$content, $sections*/ 3) {
+    			if (dirty[0] & /*$content, $sections*/ 3) {
     				each_value_1 = Array(/*$sections*/ ctx[1]);
     				validate_each_argument(each_value_1);
     				let i;
@@ -15224,7 +15263,7 @@ var app = (function () {
     				each_blocks_1.length = each_value_1.length;
     			}
 
-    			if (dirty & /*$content, $sections*/ 3) {
+    			if (dirty[0] & /*$content, $sections*/ 3) {
     				each_value = Array(/*$sections*/ ctx[1]);
     				validate_each_argument(each_value);
     				let i;
@@ -15310,6 +15349,26 @@ var app = (function () {
     	document.body.appendChild(element);
     	element.click();
     	document.body.removeChild(element);
+    }
+
+    function previewFile() {
+    	let file = document.querySelector("input[type=file]").files[0];
+    	const reader = new FileReader();
+
+    	reader.addEventListener(
+    		"load",
+    		() => {
+    			// this will then display a text file
+    			localStorage.content = reader.result;
+
+    			location.reload();
+    		},
+    		false
+    	);
+
+    	if (file) {
+    		reader.readAsText(file);
+    	}
     }
 
     function instance($$self, $$props, $$invalidate) {
@@ -15458,13 +15517,24 @@ var app = (function () {
 
     	let shiftDown = s => s;
     	let deleteS = s => s;
+    	let files;
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<App> was created with unknown prop '${key}'`);
     	});
 
+    	function input_change_handler() {
+    		files = this.files;
+    		$$invalidate(4, files);
+    	}
+
     	const click_handler = () => {
+    		start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById("outputFrame").innerHTML.split("<hr>")[0] + "<br><br></body>";
+    		download("latest.uneca", localStorage.content);
+    	};
+
+    	const click_handler_1 = () => {
     		let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById("outputFrame").innerHTML.split("<hr>")[0] + "<br><br></body>";
     		download("index.html", text);
     	};
@@ -15521,24 +15591,27 @@ var app = (function () {
     		shiftUp,
     		shiftDown,
     		deleteS,
+    		files,
+    		previewFile,
     		$content,
     		$sections
     	});
 
     	$$self.$inject_state = $$props => {
     		if ("start" in $$props) $$invalidate(2, start = $$props.start);
-    		if ("getCSS" in $$props) $$invalidate(4, getCSS = $$props.getCSS);
-    		if ("demo" in $$props) $$invalidate(5, demo = $$props.demo);
+    		if ("getCSS" in $$props) $$invalidate(5, getCSS = $$props.getCSS);
+    		if ("demo" in $$props) $$invalidate(6, demo = $$props.demo);
     		if ("makeSection" in $$props) makeSection = $$props.makeSection;
-    		if ("lab" in $$props) $$invalidate(6, lab = $$props.lab);
+    		if ("lab" in $$props) $$invalidate(7, lab = $$props.lab);
     		if ("lang" in $$props) $$invalidate(3, lang = $$props.lang);
-    		if ("sections" in $$props) $$invalidate(7, sections = $$props.sections);
-    		if ("addSection" in $$props) $$invalidate(8, addSection = $$props.addSection);
-    		if ("content" in $$props) $$invalidate(9, content = $$props.content);
+    		if ("sections" in $$props) $$invalidate(8, sections = $$props.sections);
+    		if ("addSection" in $$props) $$invalidate(9, addSection = $$props.addSection);
+    		if ("content" in $$props) $$invalidate(10, content = $$props.content);
     		if ("update" in $$props) update = $$props.update;
     		if ("shiftUp" in $$props) shiftUp = $$props.shiftUp;
     		if ("shiftDown" in $$props) shiftDown = $$props.shiftDown;
     		if ("deleteS" in $$props) deleteS = $$props.deleteS;
+    		if ("files" in $$props) $$invalidate(4, files = $$props.files);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -15546,11 +15619,11 @@ var app = (function () {
     	}
 
     	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*$content*/ 1) {
+    		if ($$self.$$.dirty[0] & /*$content*/ 1) {
     			sections.set($content.sections.length);
     		}
 
-    		if ($$self.$$.dirty & /*$sections, $content*/ 3) {
+    		if ($$self.$$.dirty[0] & /*$sections, $content*/ 3) {
     			$sections && $content && localStorage.setItem("content", JSON.stringify($content));
     		}
     	};
@@ -15560,13 +15633,16 @@ var app = (function () {
     		$sections,
     		start,
     		lang,
+    		files,
     		getCSS,
     		demo,
     		lab,
     		sections,
     		addSection,
     		content,
+    		input_change_handler,
     		click_handler,
+    		click_handler_1,
     		select_change_handler,
     		input0_input_handler,
     		input2_input_handler,
@@ -15578,7 +15654,7 @@ var app = (function () {
     class App extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance, create_fragment, safe_not_equal, {});
+    		init(this, options, instance, create_fragment, safe_not_equal, {}, [-1, -1]);
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
