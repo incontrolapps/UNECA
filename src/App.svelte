@@ -167,6 +167,9 @@ let demo = true
 <h1 style:float="left" style:max-width=100%>
   {@html lab[lang][11]}
 </h1>
+<button  on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("index.html", text) } }>
+  Download your web page
+  </button>
 <select
   style="height:fit-content;margin-top:25px"
   name="lang"
@@ -284,9 +287,7 @@ let demo = true
 	<OutputSection content={$content} {index}/>
 	{/each}<hr>
 	<br><br><br><br><br><br>
-  <button style:background-color="green" style:color="white" on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("index.html", text), document.getElementById("download").innerHTML=text; console.log(text); document.getElementById("download").style.visibility="visible"; navigator.clipboard.writeText(text); alert("Le code HTML a été copié dans votre presse-papiers. Collez-le dans un simple éditeur de texte comme MS Bloc-notes (Notepad) et enregistrez-le sous 'index.html' \nLorsque vous cliquez sur l'icône de votre nouveau fichier, il devrait ouvrir la page Web que vous avez créée dans un navigateur. \n \nThe HTML code has been copied to your clipboard. Paste it into a simple text editor like MS Notepad and save it as 'index.html' \nWhen you click on the icon for your new file, it should open the web page you have created in a browser."); } }>
-    Obtenir le code HTML de votre page
-    </button>
+ 
     <textarea  id="download"></textarea>
   <div style:height=300px > End</div>
 
