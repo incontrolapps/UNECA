@@ -5,7 +5,7 @@ export let content;
 
 <div class="summary">
 	
-{$content.summary}
+{@html  $content.summary}
 </div>
 
 <style>

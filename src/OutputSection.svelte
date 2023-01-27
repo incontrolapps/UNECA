@@ -8,7 +8,7 @@
     {#if content.sections[index].graphic}
     <img class="pic" src="{content.sections[index].graphic}" alt="classic baby shoes"/><br><br>
     {/if}
-    {content.sections[index].text}</div>
+    {@html content.sections[index].text}</div>
     {@html content.sections[index].embed}
 </div>
 <style>

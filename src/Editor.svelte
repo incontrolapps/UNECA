@@ -1,33 +1,37 @@
 <script>
-    import { onMount } from "svelte";
-  
-    let editor;
-      
-      export let toolbarOptions = [
-          [{ header: 1 }, { header: 2 }, "blockquote", "link", "image", "video"],
-          ["bold", "italic", "underline", "strike"],
-          [{ list: "ordered" }, { list: "ordered" }],
-          [{ align: [] }],
-          ["clean"]
-      ];
-      
-    onMount(async () => {
-          const { default: Quill } = await import("quill");
-      
+  import { onMount } from 'svelte';
+import Quill from './quill';
+let editor
+export let content, placeholder, part="x", type, subPart
+onMount(async () => {
+    
       let quill = new Quill(editor, {
         modules: {
-          toolbar: toolbarOptions
+          toolbar: [
+        [{ header: [1, 2, 3, false] }],
+        ["bold", "italic", "underline", "strike"],
+        ["link"],
+        [{ 'list': 'ordered'}, { 'list': 'bullet' }]
+      ]
         },
         theme: "snow",
-        placeholder: "Write your story..."
+        placeholder: placeholder
       });
+
+      if(type=="section" ){quill.root.innerHTML = $content.sections[part][subPart]}
+      else quill.root.innerHTML = $content[part];
+
+     quill.on("text-change", function(delta, oldDelta, source) {
+      let newHTML=editor.getElementsByClassName('ql-editor')[0].innerHTML
+      if (type=="section"){$content.sections[part][subPart]=newHTML}
+      else {$content[part]=newHTML}
+
+  });
+
     });
+
   </script>
-  
-  <style>
-    @import 'https://cdn.quilljs.com/1.3.6/quill.snow.css';
-  </style>
-  
-  <div class="editor-wrapper">
+
+    <div class="editor-wrapper">
     <div bind:this={editor} />
   </div>

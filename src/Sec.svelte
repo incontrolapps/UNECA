@@ -1,5 +1,5 @@
 <script>
-
+import Editor from './Editor.svelte'
 	import Slider from './Slider.svelte'
 	export let lang, index, content;
 
@@ -12,17 +12,19 @@
 			}
 console.log("content",$content, "index", index)
 </script>
-{#if $content.sections[index]}
-<p class="full">{lab[lang][0]}</p>
-	<textarea type="textarea"  class="full" bind:value={$content.sections[index].subtitle}/>
-	<p class="full">{lab[lang][1]}</p>
-	
+{#if $content.sections[index]} 
+<p class="full inputlabel">{lab[lang][0]}</p>
+
+	<textarea type="textarea"  class="full inputlabel" bind:value={$content.sections[index].subtitle}/>
+	<p class="full inputlabel">{lab[lang][1]}</p>
+
 	<input class="half" type="text" Placeholder="{lab[lang][1]}" bind:value={$content.sections[index].graphic}/><Slider/>
-	<p class="full">{lab[lang][2]}</p>	
-	<textarea class="full" type="textarea" style:width=100% Placeholder="{lab[lang][2]}" bind:value={$content.sections[index].text}/>
-	<p class="full">{lab[lang][3]}</p>	
-	<textarea class="full" type="textarea" style:width=100% Placeholder="{lab[lang][3]}" bind:value={$content.sections[index].embed}/>
-	<p class="full">{lab[lang][4]}</p>	
+	<p class="full inputlabel">{lab[lang][2]}</p>	
+	<Editor {content} placeholder={lab[lang][2]} type="section" part={index} subPart="text"/>
+	<!--<textarea class="full inputlabel" type="textarea" style:width=100% Placeholder="{lab[lang][2]}" bind:value={$content.sections[index].text}/>-->
+	<p class="full inputlabel">{lab[lang][3]}</p>	
+	<textarea class="full inputlabel" type="textarea" style:width=100% Placeholder="{lab[lang][3]}" bind:value={$content.sections[index].embed}/>
+	<p class="full inputlabel">{lab[lang][4]}</p>	
 	<input type=text class="half" Placeholder="{lab[lang][4]}" bind:value={$content.sections[index].download}/>
 	<Slider/>
 	
@@ -30,7 +32,7 @@ console.log("content",$content, "index", index)
 {/if}
 
 <style>
-	p.full{
+	p.full inputlabel{
 		margin-bottom: 0;
 	}
 </style>
