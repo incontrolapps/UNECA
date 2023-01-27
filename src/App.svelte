@@ -76,7 +76,7 @@ let demo = true
       "<b>People have given us their data, it is our duty to give it back.</b><br><br>Your publication might change people's lives for the better - think about how to communicate the information clearly, concisely, directly and accurately.",
       'page header',
       '➕ add a section',
-      'UNECA web page maker',
+      'ONS-UNECA web page maker',
     ],
     F: [
       'titre',
@@ -90,7 +90,7 @@ let demo = true
       '<b>Des personnes ont donné nous leurs données, il est de notre devoir de les rendre.</b><br><br>Votre publication pourrait changer la vie des gens pour le mieux - réfléchissez à la façon de communiquer les informations de manière claire, concise, directe et précise.',
       'en-tête de page',
       '➕ ajouter une section',
-      'Créateur de pages Web CEA',
+      'Créateur de pages Web ONS-CEA',
     ],
     P: [
       'título',
@@ -104,7 +104,7 @@ let demo = true
       '<b>Pessoas deram nos seus dados, é nosso dever devolvê-los.</b><br><br>Sua publicação pode mudar a vida das pessoas para melhor - pense em como comunicar as informações de forma clara, concisa, direta e precisa.',
       'cabeçalho da página',
       '➕ adicionar uma seção',
-      'Criador de página da Web UNECA',
+      'Criador de página da Web ONS-UNECA',
     ],
     S: [
       'título',
@@ -118,7 +118,7 @@ let demo = true
       '<b>La gente ha dado nosotros sus datos, es nuestro deber devolvérselo.</b><br><br>Tu publicación podría mejorar la vida de las personas. Piensa en cómo comunicar la información de manera clara, concisa, directa y precisa',
       'encabezado de página',
       '➕ agregar una sección',
-      'Creador de páginas web UNECA',
+      'Creador de páginas web ONS-UNECA',
     ],
   }
 

@@ -2,8 +2,8 @@ export default {
     "title": "<p>UNECA census topic web page maker: a tool that <em>might </em>help NSOs to publish census results in a more timely and accessible manner</p>",
     "name": "Tim Kershaw",
     "email": "tim.kershaw@ons.gov.uk",
-    "date": "2023-04-27",
-    "next": "2024-04-27",
+    "date": "2023-01-27",
+    "next": "TBC",
     "summary": "<p>On 26/01/2023 a meeting was convened between <a href=\"https://www.ons.gov.uk/\" rel=\"noopener noreferrer\" target=\"_blank\">the ONS</a> and <a href=\"https://www.uneca.org/\" rel=\"noopener noreferrer\" target=\"_blank\">UNECA </a>where a potential product was demonstrated.</p><p>What you see on the screen in front of you is a prototype version of that product that might work well enough to get started. It's still <em>buggy</em> and requires a lot of <strong>fine tuning</strong> and additional features, however those features would be better if proposed by trial users like yourselves.</p>",
     "sections": [
         {

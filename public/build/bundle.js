@@ -13924,8 +13924,8 @@ var app = (function () {
         "title": "<p>UNECA census topic web page maker: a tool that <em>might </em>help NSOs to publish census results in a more timely and accessible manner</p>",
         "name": "Tim Kershaw",
         "email": "tim.kershaw@ons.gov.uk",
-        "date": "2023-04-27",
-        "next": "2024-04-27",
+        "date": "2023-01-27",
+        "next": "TBC",
         "summary": "<p>On 26/01/2023 a meeting was convened between <a href=\"https://www.ons.gov.uk/\" rel=\"noopener noreferrer\" target=\"_blank\">the ONS</a> and <a href=\"https://www.uneca.org/\" rel=\"noopener noreferrer\" target=\"_blank\">UNECA </a>where a potential product was demonstrated.</p><p>What you see on the screen in front of you is a prototype version of that product that might work well enough to get started. It's still <em>buggy</em> and requires a lot of <strong>fine tuning</strong> and additional features, however those features would be better if proposed by trial users like yourselves.</p>",
         "sections": [
             {
@@ -14041,9 +14041,9 @@ var app = (function () {
 
     			each_1_anchor = empty();
     			attr_dev(i, "style:color", "#999");
-    			add_location(i, file, 285, 6, 9506);
-    			add_location(br0, file, 286, 6, 9560);
-    			add_location(br1, file, 287, 6, 9574);
+    			add_location(i, file, 285, 6, 9522);
+    			add_location(br0, file, 286, 6, 9576);
+    			add_location(br1, file, 287, 6, 9590);
     		},
     		m: function mount(target, anchor) {
     			mount_component(box0, target, anchor);
@@ -14270,66 +14270,66 @@ var app = (function () {
     			input7 = element("input");
     			t20 = space();
     			span3 = element("span");
-    			add_location(br0, file, 228, 8, 7847);
+    			add_location(br0, file, 228, 8, 7863);
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "class", "half");
     			attr_dev(input0, "placeholder", input0_placeholder_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][1]);
-    			add_location(input0, file, 229, 8, 7863);
+    			add_location(input0, file, 229, 8, 7879);
     			attr_dev(input1, "type", "checkbox");
     			input1.checked = true;
     			attr_dev(input1, "class", "svelte-125zpsz");
-    			add_location(input1, file, 235, 10, 8039);
+    			add_location(input1, file, 235, 10, 8055);
     			attr_dev(span0, "class", "slider round svelte-125zpsz");
-    			add_location(span0, file, 236, 10, 8084);
+    			add_location(span0, file, 236, 10, 8100);
     			attr_dev(label0, "class", "switch svelte-125zpsz");
-    			add_location(label0, file, 234, 8, 8005);
-    			add_location(br1, file, 238, 8, 8141);
+    			add_location(label0, file, 234, 8, 8021);
+    			add_location(br1, file, 238, 8, 8157);
     			attr_dev(input2, "type", "text");
     			attr_dev(input2, "class", "half");
     			attr_dev(input2, "placeholder", input2_placeholder_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][2]);
-    			add_location(input2, file, 240, 8, 8159);
+    			add_location(input2, file, 240, 8, 8175);
     			attr_dev(input3, "type", "checkbox");
     			input3.checked = true;
     			attr_dev(input3, "class", "svelte-125zpsz");
-    			add_location(input3, file, 246, 10, 8336);
+    			add_location(input3, file, 246, 10, 8352);
     			attr_dev(span1, "class", "slider round svelte-125zpsz");
-    			add_location(span1, file, 247, 10, 8381);
+    			add_location(span1, file, 247, 10, 8397);
     			attr_dev(label1, "class", "switch svelte-125zpsz");
-    			add_location(label1, file, 245, 8, 8302);
-    			add_location(br2, file, 249, 8, 8438);
+    			add_location(label1, file, 245, 8, 8318);
+    			add_location(br2, file, 249, 8, 8454);
     			attr_dev(label2, "for", "date");
     			attr_dev(label2, "class", "svelte-125zpsz");
-    			add_location(label2, file, 250, 8, 8454);
+    			add_location(label2, file, 250, 8, 8470);
     			attr_dev(input4, "type", "date");
     			attr_dev(input4, "id", "date");
     			attr_dev(input4, "class", "half");
     			attr_dev(input4, "placeholder", "date");
-    			add_location(input4, file, 251, 8, 8505);
+    			add_location(input4, file, 251, 8, 8521);
     			attr_dev(input5, "type", "checkbox");
     			input5.checked = true;
     			attr_dev(input5, "class", "svelte-125zpsz");
-    			add_location(input5, file, 258, 10, 8694);
+    			add_location(input5, file, 258, 10, 8710);
     			attr_dev(span2, "class", "slider round svelte-125zpsz");
-    			add_location(span2, file, 259, 10, 8739);
+    			add_location(span2, file, 259, 10, 8755);
     			attr_dev(label3, "class", "switch svelte-125zpsz");
-    			add_location(label3, file, 257, 8, 8660);
-    			add_location(br3, file, 261, 8, 8796);
+    			add_location(label3, file, 257, 8, 8676);
+    			add_location(br3, file, 261, 8, 8812);
     			attr_dev(label4, "for", "next");
     			attr_dev(label4, "class", "svelte-125zpsz");
-    			add_location(label4, file, 262, 8, 8812);
+    			add_location(label4, file, 262, 8, 8828);
     			attr_dev(input6, "type", "date");
     			attr_dev(input6, "id", "next");
     			attr_dev(input6, "class", "half");
     			attr_dev(input6, "placeholder", "date");
-    			add_location(input6, file, 263, 8, 8862);
+    			add_location(input6, file, 263, 8, 8878);
     			attr_dev(input7, "type", "checkbox");
     			input7.checked = true;
     			attr_dev(input7, "class", "svelte-125zpsz");
-    			add_location(input7, file, 270, 10, 9051);
+    			add_location(input7, file, 270, 10, 9067);
     			attr_dev(span3, "class", "slider round svelte-125zpsz");
-    			add_location(span3, file, 271, 10, 9096);
+    			add_location(span3, file, 271, 10, 9112);
     			attr_dev(label5, "class", "switch svelte-125zpsz");
-    			add_location(label5, file, 269, 8, 9017);
+    			add_location(label5, file, 269, 8, 9033);
     		},
     		m: function mount(target, anchor) {
     			mount_component(editor, target, anchor);
@@ -14544,7 +14544,7 @@ var app = (function () {
     			div = element("div");
     			create_component(editor.$$.fragment);
     			attr_dev(div, "style:display", "block");
-    			add_location(div, file, 276, 2, 9223);
+    			add_location(div, file, 276, 2, 9239);
     		},
     		m: function mount(target, anchor) {
     			mount_component(title, target, anchor);
@@ -14809,9 +14809,9 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(a, "href", "#section" + /*i*/ ctx[32]);
-    			add_location(a, file, 307, 12, 10200);
+    			add_location(a, file, 307, 12, 10216);
     			attr_dev(li, "class", "bold svelte-125zpsz");
-    			add_location(li, file, 306, 10, 10169);
+    			add_location(li, file, 306, 10, 10185);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -15078,21 +15078,21 @@ var app = (function () {
     			div4.textContent = "End";
     			attr_dev(h1, "style:float", "left");
     			attr_dev(h1, "style:max-width", "100%");
-    			add_location(h1, file, 178, 0, 5516);
+    			add_location(h1, file, 178, 0, 5532);
     			set_style(button0, "height", "fit-content");
     			set_style(button0, "padding", "6px");
     			set_style(button0, "margin-top", "20px");
     			set_style(button0, "margin-right", "5px");
     			set_style(button0, "border-color", "grey");
     			attr_dev(button0, "class", "svelte-125zpsz");
-    			add_location(button0, file, 182, 0, 5597);
+    			add_location(button0, file, 182, 0, 5613);
     			set_style(button1, "height", "fit-content");
     			set_style(button1, "padding", "6px");
     			set_style(button1, "margin-top", "20px");
     			set_style(button1, "margin-right", "5px");
     			set_style(button1, "border-color", "grey");
     			attr_dev(button1, "class", "svelte-125zpsz");
-    			add_location(button1, file, 185, 2, 5826);
+    			add_location(button1, file, 185, 2, 5842);
     			attr_dev(input, "type", "file");
     			attr_dev(input, "accept", ".uneca");
     			set_style(input, "height", "fit-content");
@@ -15100,75 +15100,75 @@ var app = (function () {
     			set_style(input, "margin-top", "20px");
     			attr_dev(input, "placeholder", "upload previous work");
     			attr_dev(input, "class", "svelte-125zpsz");
-    			add_location(input, file, 189, 0, 6085);
+    			add_location(input, file, 189, 0, 6101);
     			attr_dev(label, "class", "custom-file-upload svelte-125zpsz");
-    			add_location(label, file, 188, 0, 6049);
+    			add_location(label, file, 188, 0, 6065);
     			set_style(button2, "height", "fit-content");
     			set_style(button2, "padding", "6px");
     			set_style(button2, "margin-top", "20px");
     			set_style(button2, "margin-right", "5px");
     			set_style(button2, "border-color", "grey");
     			attr_dev(button2, "class", "svelte-125zpsz");
-    			add_location(button2, file, 192, 0, 6285);
+    			add_location(button2, file, 192, 0, 6301);
     			set_style(button3, "height", "fit-content");
     			set_style(button3, "padding", "6px");
     			set_style(button3, "margin-top", "20px");
     			set_style(button3, "margin-right", "5px");
     			set_style(button3, "border-color", "#ff7d00");
     			attr_dev(button3, "class", "svelte-125zpsz");
-    			add_location(button3, file, 195, 2, 6676);
+    			add_location(button3, file, 195, 2, 6692);
     			option0.__value = "E";
     			option0.value = option0.__value;
-    			add_location(option0, file, 204, 2, 7155);
+    			add_location(option0, file, 204, 2, 7171);
     			option1.__value = "F";
     			option1.value = option1.__value;
-    			add_location(option1, file, 205, 2, 7196);
+    			add_location(option1, file, 205, 2, 7212);
     			option2.__value = "P";
     			option2.value = option2.__value;
-    			add_location(option2, file, 206, 2, 7238);
+    			add_location(option2, file, 206, 2, 7254);
     			option3.__value = "S";
     			option3.value = option3.__value;
-    			add_location(option3, file, 207, 2, 7281);
+    			add_location(option3, file, 207, 2, 7297);
     			set_style(select, "height", "fit-content");
     			set_style(select, "margin-top", "25px");
     			attr_dev(select, "name", "lang");
     			if (/*lang*/ ctx[3] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[17].call(select));
-    			add_location(select, file, 199, 0, 7059);
+    			add_location(select, file, 199, 0, 7075);
     			attr_dev(div0, "class", "top svelte-125zpsz");
-    			add_location(div0, file, 177, 2, 5497);
+    			add_location(div0, file, 177, 2, 5513);
     			set_style(br0, "clear", "both");
-    			add_location(br0, file, 209, 0, 7337);
+    			add_location(br0, file, 209, 0, 7353);
     			attr_dev(p, "style:padding-left", "10px");
-    			add_location(p, file, 214, 6, 7471);
+    			add_location(p, file, 214, 6, 7487);
     			attr_dev(div1, "class", "shaded svelte-125zpsz");
-    			add_location(div1, file, 212, 4, 7426);
-    			add_location(br1, file, 218, 4, 7560);
+    			add_location(div1, file, 212, 4, 7442);
+    			add_location(br1, file, 218, 4, 7576);
     			attr_dev(button4, "class", "svelte-125zpsz");
-    			add_location(button4, file, 296, 4, 9860);
+    			add_location(button4, file, 296, 4, 9876);
     			attr_dev(div2, "class", "half_content svelte-125zpsz");
-    			add_location(div2, file, 211, 2, 7394);
-    			add_location(h3, file, 303, 6, 10074);
-    			add_location(ol, file, 304, 6, 10105);
+    			add_location(div2, file, 211, 2, 7410);
+    			add_location(h3, file, 303, 6, 10090);
+    			add_location(ol, file, 304, 6, 10121);
     			attr_dev(div3, "class", "toc svelte-125zpsz");
-    			add_location(div3, file, 301, 4, 10047);
-    			add_location(hr, file, 314, 8, 10417);
-    			add_location(br2, file, 315, 1, 10424);
-    			add_location(br3, file, 315, 5, 10428);
-    			add_location(br4, file, 315, 9, 10432);
-    			add_location(br5, file, 315, 13, 10436);
-    			add_location(br6, file, 315, 17, 10440);
-    			add_location(br7, file, 315, 21, 10444);
+    			add_location(div3, file, 301, 4, 10063);
+    			add_location(hr, file, 314, 8, 10433);
+    			add_location(br2, file, 315, 1, 10440);
+    			add_location(br3, file, 315, 5, 10444);
+    			add_location(br4, file, 315, 9, 10448);
+    			add_location(br5, file, 315, 13, 10452);
+    			add_location(br6, file, 315, 17, 10456);
+    			add_location(br7, file, 315, 21, 10460);
     			attr_dev(textarea, "id", "download");
-    			add_location(textarea, file, 317, 4, 10457);
+    			add_location(textarea, file, 317, 4, 10473);
     			attr_dev(div4, "style:height", "300px");
-    			add_location(div4, file, 318, 2, 10497);
+    			add_location(div4, file, 318, 2, 10513);
     			attr_dev(div5, "id", "outputFrame");
     			attr_dev(div5, "class", "half_content right svelte-125zpsz");
-    			add_location(div5, file, 298, 2, 9928);
+    			add_location(div5, file, 298, 2, 9944);
     			attr_dev(div6, "class", "full_content svelte-125zpsz");
-    			add_location(div6, file, 210, 0, 7364);
+    			add_location(div6, file, 210, 0, 7380);
     			attr_dev(div7, "class", "page svelte-125zpsz");
-    			add_location(div7, file, 176, 0, 5477);
+    			add_location(div7, file, 176, 0, 5493);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -15497,7 +15497,7 @@ var app = (function () {
     			"<b>People have given us their data, it is our duty to give it back.</b><br><br>Your publication might change people's lives for the better - think about how to communicate the information clearly, concisely, directly and accurately.",
     			"page header",
     			"➕ add a section",
-    			"UNECA web page maker"
+    			"ONS-UNECA web page maker"
     		],
     		F: [
     			"titre",
@@ -15511,7 +15511,7 @@ var app = (function () {
     			"<b>Des personnes ont donné nous leurs données, il est de notre devoir de les rendre.</b><br><br>Votre publication pourrait changer la vie des gens pour le mieux - réfléchissez à la façon de communiquer les informations de manière claire, concise, directe et précise.",
     			"en-tête de page",
     			"➕ ajouter une section",
-    			"Créateur de pages Web CEA"
+    			"Créateur de pages Web ONS-CEA"
     		],
     		P: [
     			"título",
@@ -15525,7 +15525,7 @@ var app = (function () {
     			"<b>Pessoas deram nos seus dados, é nosso dever devolvê-los.</b><br><br>Sua publicação pode mudar a vida das pessoas para melhor - pense em como comunicar as informações de forma clara, concisa, direta e precisa.",
     			"cabeçalho da página",
     			"➕ adicionar uma seção",
-    			"Criador de página da Web UNECA"
+    			"Criador de página da Web ONS-UNECA"
     		],
     		S: [
     			"título",
@@ -15539,7 +15539,7 @@ var app = (function () {
     			"<b>La gente ha dado nosotros sus datos, es nuestro deber devolvérselo.</b><br><br>Tu publicación podría mejorar la vida de las personas. Piensa en cómo comunicar la información de manera clara, concisa, directa y precisa",
     			"encabezado de página",
     			"➕ agregar una sección",
-    			"Creador de páginas web UNECA"
+    			"Creador de páginas web ONS-UNECA"
     		]
     	};
 
