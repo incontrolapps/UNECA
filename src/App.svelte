@@ -193,7 +193,7 @@ upload previous work
 <button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px" on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("latest.uneca", localStorage.content) } }>
   Save changes for later
   </button>
-  <button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px" on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("index.html", text) } }>
+  <button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px; border-color:#ff7d00" on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("index.html", text) } }>
     Download your web page
     </button>
    
