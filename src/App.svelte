@@ -180,17 +180,17 @@ let demo = true
   {@html lab[lang][11]}
 </h1> 
 
-<button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px" on:click={()=>{localStorage.content=JSON.stringify(cleanSheet); location.reload(); } }>
+<button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px; border-color:grey" on:click={()=>{localStorage.content=JSON.stringify(cleanSheet); location.reload(); } }>
   Clear all content
   </button>
-  <button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px" on:click={()=>{localStorage.content=JSON.stringify(demoArticle); location.reload(); } }>
+  <button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px; border-color:grey" on:click={()=>{localStorage.content=JSON.stringify(demoArticle); location.reload(); } }>
     See demo
     </button>
 <label class="custom-file-upload">
 <input type="file" bind:files on:change={previewFile} accept=".uneca" style="height: fit-content;padding: 6px; margin-top: 20px;" placeholder="upload previous work"/>
 upload previous work
 </label>
-<button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px" on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("latest.uneca", localStorage.content) } }>
+<button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px; border-color:grey" on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("latest.uneca", localStorage.content) } }>
   Save changes for later
   </button>
   <button  style="height: fit-content;padding: 6px; margin-top: 20px;margin-right:5px; border-color:#ff7d00" on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("index.html", text) } }>
@@ -332,7 +332,7 @@ input[type="file"] {
     height: fit-content;
     padding: 6px;
     margin-top: 20px;
-    border: 5px solid gold;
+    border: 5px solid grey;
     margin-right:5px
 }
 
