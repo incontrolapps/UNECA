@@ -167,7 +167,7 @@ let demo = true
 <h1 style:float="left" style:max-width=100%>
   {@html lab[lang][11]}
 </h1>
-<button  on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("index.html", text) } }>
+<button  style="height: fit-content;padding: 6px; margin-top: 20px;" on:click={()=>{let text = start + getCSS() + "</head><body style='height:initial; overflow-y:visible'>" + document.getElementById('outputFrame').innerHTML.split('<hr>')[0] + "<br><br></body>"; download("index.html", text) } }>
   Download your web page
   </button>
 <select
