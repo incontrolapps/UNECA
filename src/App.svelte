@@ -208,7 +208,7 @@ upload previous work
   <option value="S">🗨 ESPAÑOL</option>
 </select></div>
 <br style="clear:both" />
-<a style="font-size:1.5em; margin-top:-30px" href="https://docs.google.com/spreadsheets/d/1VfPFMfAeJh9rW6N1xqVC_TUZQshiEK02sOCwVYMijTc/edit#gid=0">feedback here please</a>
+<a style="font-size:1.5em; margin-top:-30px" target="_blank" href="https://docs.google.com/spreadsheets/d/1VfPFMfAeJh9rW6N1xqVC_TUZQshiEK02sOCwVYMijTc/edit#gid=0">feedback here please</a>
 <div class="full_content">
   <div class="half_content">
     <div class="shaded">
