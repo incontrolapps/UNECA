@@ -315,10 +315,10 @@ upload previous work
 	<OutputSection content={$content} {index}/>
 	{/each}<hr>
 	<br><br><br><br><br><br>
- 
+ <!--
     <textarea  id="download"></textarea>
   <div style:height=300px > End</div>
-
+-->
 </div>
 </div>
 </div>
