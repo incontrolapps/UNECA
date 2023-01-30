@@ -1,5 +1,5 @@
 
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
+(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
 var app = (function () {
     'use strict';
 
@@ -13954,7 +13954,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (221:4) {#if $sections && $content.title}
+    // (222:4) {#if $sections && $content.title}
     function create_if_block(ctx) {
     	let box0;
     	let t0;
@@ -14024,9 +14024,9 @@ var app = (function () {
 
     			each_1_anchor = empty();
     			attr_dev(i, "style:color", "#999");
-    			add_location(i, file, 285, 6, 9522);
-    			add_location(br0, file, 286, 6, 9576);
-    			add_location(br1, file, 287, 6, 9590);
+    			add_location(i, file, 286, 6, 9695);
+    			add_location(br0, file, 287, 6, 9749);
+    			add_location(br1, file, 288, 6, 9763);
     		},
     		m: function mount(target, anchor) {
     			mount_component(box0, target, anchor);
@@ -14137,14 +14137,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(221:4) {#if $sections && $content.title}",
+    		source: "(222:4) {#if $sections && $content.title}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (222:6) <Box>
+    // (223:6) <Box>
     function create_default_slot_4(ctx) {
     	let editor;
     	let t0;
@@ -14253,66 +14253,66 @@ var app = (function () {
     			input7 = element("input");
     			t20 = space();
     			span3 = element("span");
-    			add_location(br0, file, 228, 8, 7863);
+    			add_location(br0, file, 229, 8, 8036);
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "class", "half");
     			attr_dev(input0, "placeholder", input0_placeholder_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][1]);
-    			add_location(input0, file, 229, 8, 7879);
+    			add_location(input0, file, 230, 8, 8052);
     			attr_dev(input1, "type", "checkbox");
     			input1.checked = true;
     			attr_dev(input1, "class", "svelte-125zpsz");
-    			add_location(input1, file, 235, 10, 8055);
+    			add_location(input1, file, 236, 10, 8228);
     			attr_dev(span0, "class", "slider round svelte-125zpsz");
-    			add_location(span0, file, 236, 10, 8100);
+    			add_location(span0, file, 237, 10, 8273);
     			attr_dev(label0, "class", "switch svelte-125zpsz");
-    			add_location(label0, file, 234, 8, 8021);
-    			add_location(br1, file, 238, 8, 8157);
+    			add_location(label0, file, 235, 8, 8194);
+    			add_location(br1, file, 239, 8, 8330);
     			attr_dev(input2, "type", "text");
     			attr_dev(input2, "class", "half");
     			attr_dev(input2, "placeholder", input2_placeholder_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][2]);
-    			add_location(input2, file, 240, 8, 8175);
+    			add_location(input2, file, 241, 8, 8348);
     			attr_dev(input3, "type", "checkbox");
     			input3.checked = true;
     			attr_dev(input3, "class", "svelte-125zpsz");
-    			add_location(input3, file, 246, 10, 8352);
+    			add_location(input3, file, 247, 10, 8525);
     			attr_dev(span1, "class", "slider round svelte-125zpsz");
-    			add_location(span1, file, 247, 10, 8397);
+    			add_location(span1, file, 248, 10, 8570);
     			attr_dev(label1, "class", "switch svelte-125zpsz");
-    			add_location(label1, file, 245, 8, 8318);
-    			add_location(br2, file, 249, 8, 8454);
+    			add_location(label1, file, 246, 8, 8491);
+    			add_location(br2, file, 250, 8, 8627);
     			attr_dev(label2, "for", "date");
     			attr_dev(label2, "class", "svelte-125zpsz");
-    			add_location(label2, file, 250, 8, 8470);
+    			add_location(label2, file, 251, 8, 8643);
     			attr_dev(input4, "type", "date");
     			attr_dev(input4, "id", "date");
     			attr_dev(input4, "class", "half");
     			attr_dev(input4, "placeholder", "date");
-    			add_location(input4, file, 251, 8, 8521);
+    			add_location(input4, file, 252, 8, 8694);
     			attr_dev(input5, "type", "checkbox");
     			input5.checked = true;
     			attr_dev(input5, "class", "svelte-125zpsz");
-    			add_location(input5, file, 258, 10, 8710);
+    			add_location(input5, file, 259, 10, 8883);
     			attr_dev(span2, "class", "slider round svelte-125zpsz");
-    			add_location(span2, file, 259, 10, 8755);
+    			add_location(span2, file, 260, 10, 8928);
     			attr_dev(label3, "class", "switch svelte-125zpsz");
-    			add_location(label3, file, 257, 8, 8676);
-    			add_location(br3, file, 261, 8, 8812);
+    			add_location(label3, file, 258, 8, 8849);
+    			add_location(br3, file, 262, 8, 8985);
     			attr_dev(label4, "for", "next");
     			attr_dev(label4, "class", "svelte-125zpsz");
-    			add_location(label4, file, 262, 8, 8828);
+    			add_location(label4, file, 263, 8, 9001);
     			attr_dev(input6, "type", "date");
     			attr_dev(input6, "id", "next");
     			attr_dev(input6, "class", "half");
     			attr_dev(input6, "placeholder", "date");
-    			add_location(input6, file, 263, 8, 8878);
+    			add_location(input6, file, 264, 8, 9051);
     			attr_dev(input7, "type", "checkbox");
     			input7.checked = true;
     			attr_dev(input7, "class", "svelte-125zpsz");
-    			add_location(input7, file, 270, 10, 9067);
+    			add_location(input7, file, 271, 10, 9240);
     			attr_dev(span3, "class", "slider round svelte-125zpsz");
-    			add_location(span3, file, 271, 10, 9112);
+    			add_location(span3, file, 272, 10, 9285);
     			attr_dev(label5, "class", "switch svelte-125zpsz");
-    			add_location(label5, file, 269, 8, 9033);
+    			add_location(label5, file, 270, 8, 9206);
     		},
     		m: function mount(target, anchor) {
     			mount_component(editor, target, anchor);
@@ -14457,14 +14457,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(222:6) <Box>",
+    		source: "(223:6) <Box>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (276:8) <Title>
+    // (277:8) <Title>
     function create_default_slot_3(ctx) {
     	let t_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][5] + "";
     	let t;
@@ -14488,14 +14488,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(276:8) <Title>",
+    		source: "(277:8) <Title>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (275:6) <Box {content}>
+    // (276:6) <Box {content}>
     function create_default_slot_2(ctx) {
     	let title;
     	let t;
@@ -14527,7 +14527,7 @@ var app = (function () {
     			div = element("div");
     			create_component(editor.$$.fragment);
     			attr_dev(div, "style:display", "block");
-    			add_location(div, file, 276, 2, 9239);
+    			add_location(div, file, 277, 2, 9412);
     		},
     		m: function mount(target, anchor) {
     			mount_component(title, target, anchor);
@@ -14571,14 +14571,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(275:6) <Box {content}>",
+    		source: "(276:6) <Box {content}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (291:10) <Title {content}>
+    // (292:10) <Title {content}>
     function create_default_slot_1(ctx) {
     	let t0_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][7] + "";
     	let t0;
@@ -14611,14 +14611,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(291:10) <Title {content}>",
+    		source: "(292:10) <Title {content}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (290:8) <Box>
+    // (291:8) <Box>
     function create_default_slot(ctx) {
     	let title;
     	let t0;
@@ -14715,14 +14715,14 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(290:8) <Box>",
+    		source: "(291:8) <Box>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (289:6) {#each Array($sections) as sec, i}
+    // (290:6) {#each Array($sections) as sec, i}
     function create_each_block_2(ctx) {
     	let box;
     	let current;
@@ -14770,14 +14770,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(289:6) {#each Array($sections) as sec, i}",
+    		source: "(290:6) {#each Array($sections) as sec, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (306:8) {#each Array($sections) as section, i}
+    // (307:8) {#each Array($sections) as section, i}
     function create_each_block_1(ctx) {
     	let li;
     	let a;
@@ -14792,9 +14792,9 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(a, "href", "#section" + /*i*/ ctx[32]);
-    			add_location(a, file, 307, 12, 10216);
+    			add_location(a, file, 308, 12, 10389);
     			attr_dev(li, "class", "bold svelte-125zpsz");
-    			add_location(li, file, 306, 10, 10185);
+    			add_location(li, file, 307, 10, 10358);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -14814,14 +14814,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(306:8) {#each Array($sections) as section, i}",
+    		source: "(307:8) {#each Array($sections) as section, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (313:1) {#each Array($sections) as section, index}
+    // (314:1) {#each Array($sections) as section, index}
     function create_each_block(ctx) {
     	let outputsection;
     	let t;
@@ -14869,7 +14869,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(313:1) {#each Array($sections) as section, index}",
+    		source: "(314:1) {#each Array($sections) as section, index}",
     		ctx
     	});
 
@@ -14902,44 +14902,46 @@ var app = (function () {
     	let t15;
     	let br0;
     	let t16;
+    	let a;
+    	let t18;
     	let div6;
     	let div2;
     	let div1;
     	let brain;
-    	let t17;
+    	let t19;
     	let p;
     	let raw1_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][8] + "";
-    	let t18;
-    	let br1;
-    	let t19;
     	let t20;
-    	let button4;
-    	let t21_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][10] + "";
+    	let br1;
     	let t21;
     	let t22;
+    	let button4;
+    	let t23_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][10] + "";
+    	let t23;
+    	let t24;
     	let div5;
     	let outputtitle;
-    	let t23;
+    	let t25;
     	let outputsummary;
-    	let t24;
+    	let t26;
     	let div3;
     	let h3;
-    	let t25_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][6] + "";
-    	let t25;
-    	let t26;
-    	let ol;
+    	let t27_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][6] + "";
     	let t27;
-    	let hr;
     	let t28;
+    	let ol;
+    	let t29;
+    	let hr;
+    	let t30;
     	let br2;
     	let br3;
     	let br4;
     	let br5;
     	let br6;
     	let br7;
-    	let t29;
+    	let t31;
     	let textarea;
-    	let t30;
+    	let t32;
     	let div4;
     	let current;
     	let mounted;
@@ -15011,52 +15013,55 @@ var app = (function () {
     			t15 = space();
     			br0 = element("br");
     			t16 = space();
+    			a = element("a");
+    			a.textContent = "feedback here please";
+    			t18 = space();
     			div6 = element("div");
     			div2 = element("div");
     			div1 = element("div");
     			create_component(brain.$$.fragment);
-    			t17 = space();
-    			p = element("p");
-    			t18 = space();
-    			br1 = element("br");
     			t19 = space();
-    			if (if_block) if_block.c();
+    			p = element("p");
     			t20 = space();
-    			button4 = element("button");
-    			t21 = text(t21_value);
+    			br1 = element("br");
+    			t21 = space();
+    			if (if_block) if_block.c();
     			t22 = space();
+    			button4 = element("button");
+    			t23 = text(t23_value);
+    			t24 = space();
     			div5 = element("div");
     			create_component(outputtitle.$$.fragment);
-    			t23 = space();
+    			t25 = space();
     			create_component(outputsummary.$$.fragment);
-    			t24 = space();
+    			t26 = space();
     			div3 = element("div");
     			h3 = element("h3");
-    			t25 = text(t25_value);
-    			t26 = space();
+    			t27 = text(t27_value);
+    			t28 = space();
     			ol = element("ol");
 
     			for (let i = 0; i < each_blocks_1.length; i += 1) {
     				each_blocks_1[i].c();
     			}
 
-    			t27 = space();
+    			t29 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
     			hr = element("hr");
-    			t28 = space();
+    			t30 = space();
     			br2 = element("br");
     			br3 = element("br");
     			br4 = element("br");
     			br5 = element("br");
     			br6 = element("br");
     			br7 = element("br");
-    			t29 = space();
+    			t31 = space();
     			textarea = element("textarea");
-    			t30 = space();
+    			t32 = space();
     			div4 = element("div");
     			div4.textContent = "End";
     			attr_dev(h1, "style:float", "left");
@@ -15121,35 +15126,39 @@ var app = (function () {
     			add_location(div0, file, 177, 2, 5513);
     			set_style(br0, "clear", "both");
     			add_location(br0, file, 209, 0, 7353);
+    			set_style(a, "font-size", "1.5em");
+    			set_style(a, "margin-top", "-30px");
+    			attr_dev(a, "href", "https://docs.google.com/spreadsheets/d/1VfPFMfAeJh9rW6N1xqVC_TUZQshiEK02sOCwVYMijTc/edit#gid=0");
+    			add_location(a, file, 210, 0, 7380);
     			attr_dev(p, "style:padding-left", "10px");
-    			add_location(p, file, 214, 6, 7487);
+    			add_location(p, file, 215, 6, 7660);
     			attr_dev(div1, "class", "shaded svelte-125zpsz");
-    			add_location(div1, file, 212, 4, 7442);
-    			add_location(br1, file, 218, 4, 7576);
+    			add_location(div1, file, 213, 4, 7615);
+    			add_location(br1, file, 219, 4, 7749);
     			attr_dev(button4, "class", "svelte-125zpsz");
-    			add_location(button4, file, 296, 4, 9876);
+    			add_location(button4, file, 297, 4, 10049);
     			attr_dev(div2, "class", "half_content svelte-125zpsz");
-    			add_location(div2, file, 211, 2, 7410);
-    			add_location(h3, file, 303, 6, 10090);
-    			add_location(ol, file, 304, 6, 10121);
+    			add_location(div2, file, 212, 2, 7583);
+    			add_location(h3, file, 304, 6, 10263);
+    			add_location(ol, file, 305, 6, 10294);
     			attr_dev(div3, "class", "toc svelte-125zpsz");
-    			add_location(div3, file, 301, 4, 10063);
-    			add_location(hr, file, 314, 8, 10433);
-    			add_location(br2, file, 315, 1, 10440);
-    			add_location(br3, file, 315, 5, 10444);
-    			add_location(br4, file, 315, 9, 10448);
-    			add_location(br5, file, 315, 13, 10452);
-    			add_location(br6, file, 315, 17, 10456);
-    			add_location(br7, file, 315, 21, 10460);
+    			add_location(div3, file, 302, 4, 10236);
+    			add_location(hr, file, 315, 8, 10606);
+    			add_location(br2, file, 316, 1, 10613);
+    			add_location(br3, file, 316, 5, 10617);
+    			add_location(br4, file, 316, 9, 10621);
+    			add_location(br5, file, 316, 13, 10625);
+    			add_location(br6, file, 316, 17, 10629);
+    			add_location(br7, file, 316, 21, 10633);
     			attr_dev(textarea, "id", "download");
-    			add_location(textarea, file, 317, 4, 10473);
+    			add_location(textarea, file, 318, 4, 10646);
     			attr_dev(div4, "style:height", "300px");
-    			add_location(div4, file, 318, 2, 10513);
+    			add_location(div4, file, 319, 2, 10686);
     			attr_dev(div5, "id", "outputFrame");
     			attr_dev(div5, "class", "half_content right svelte-125zpsz");
-    			add_location(div5, file, 298, 2, 9944);
+    			add_location(div5, file, 299, 2, 10117);
     			attr_dev(div6, "class", "full_content svelte-125zpsz");
-    			add_location(div6, file, 210, 0, 7380);
+    			add_location(div6, file, 211, 0, 7553);
     			attr_dev(div7, "class", "page svelte-125zpsz");
     			add_location(div7, file, 176, 0, 5493);
     		},
@@ -15183,53 +15192,55 @@ var app = (function () {
     			append_dev(div7, t15);
     			append_dev(div7, br0);
     			append_dev(div7, t16);
+    			append_dev(div7, a);
+    			append_dev(div7, t18);
     			append_dev(div7, div6);
     			append_dev(div6, div2);
     			append_dev(div2, div1);
     			mount_component(brain, div1, null);
-    			append_dev(div1, t17);
+    			append_dev(div1, t19);
     			append_dev(div1, p);
     			p.innerHTML = raw1_value;
-    			append_dev(div2, t18);
-    			append_dev(div2, br1);
-    			append_dev(div2, t19);
-    			if (if_block) if_block.m(div2, null);
     			append_dev(div2, t20);
+    			append_dev(div2, br1);
+    			append_dev(div2, t21);
+    			if (if_block) if_block.m(div2, null);
+    			append_dev(div2, t22);
     			append_dev(div2, button4);
-    			append_dev(button4, t21);
-    			append_dev(div6, t22);
+    			append_dev(button4, t23);
+    			append_dev(div6, t24);
     			append_dev(div6, div5);
     			mount_component(outputtitle, div5, null);
-    			append_dev(div5, t23);
+    			append_dev(div5, t25);
     			mount_component(outputsummary, div5, null);
-    			append_dev(div5, t24);
+    			append_dev(div5, t26);
     			append_dev(div5, div3);
     			append_dev(div3, h3);
-    			append_dev(h3, t25);
-    			append_dev(div3, t26);
+    			append_dev(h3, t27);
+    			append_dev(div3, t28);
     			append_dev(div3, ol);
 
     			for (let i = 0; i < each_blocks_1.length; i += 1) {
     				each_blocks_1[i].m(ol, null);
     			}
 
-    			append_dev(div5, t27);
+    			append_dev(div5, t29);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(div5, null);
     			}
 
     			append_dev(div5, hr);
-    			append_dev(div5, t28);
+    			append_dev(div5, t30);
     			append_dev(div5, br2);
     			append_dev(div5, br3);
     			append_dev(div5, br4);
     			append_dev(div5, br5);
     			append_dev(div5, br6);
     			append_dev(div5, br7);
-    			append_dev(div5, t29);
+    			append_dev(div5, t31);
     			append_dev(div5, textarea);
-    			append_dev(div5, t30);
+    			append_dev(div5, t32);
     			append_dev(div5, div4);
     			current = true;
 
@@ -15266,7 +15277,7 @@ var app = (function () {
     					if_block = create_if_block(ctx);
     					if_block.c();
     					transition_in(if_block, 1);
-    					if_block.m(div2, t20);
+    					if_block.m(div2, t22);
     				}
     			} else if (if_block) {
     				group_outros();
@@ -15278,8 +15289,8 @@ var app = (function () {
     				check_outros();
     			}
 
-    			if ((!current || dirty[0] & /*lang*/ 8) && t21_value !== (t21_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][10] + "")) set_data_dev(t21, t21_value);
-    			if ((!current || dirty[0] & /*lang*/ 8) && t25_value !== (t25_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][6] + "")) set_data_dev(t25, t25_value);
+    			if ((!current || dirty[0] & /*lang*/ 8) && t23_value !== (t23_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][10] + "")) set_data_dev(t23, t23_value);
+    			if ((!current || dirty[0] & /*lang*/ 8) && t27_value !== (t27_value = /*lab*/ ctx[8][/*lang*/ ctx[3]][6] + "")) set_data_dev(t27, t27_value);
 
     			if (dirty[0] & /*$content, $sections*/ 3) {
     				each_value_1 = Array(/*$sections*/ ctx[1]);
